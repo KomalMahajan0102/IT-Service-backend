@@ -14,9 +14,8 @@ const adminMiddleware = require("./middlewares/admin-middleware");
 
 
 const corsOption={
-  origin:"http://localhost:3000",
-  methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
-  creadentials:true,
+  origin:["http://localhost:3000","https://it-service-app.onrender.com"]
+  
 }
 app.use(cors(corsOption));
 
